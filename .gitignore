@@ -3,3 +3,4 @@ logs
 .env
 dags/__pycache__
 config/
+plugins/operators/__pycache__/
