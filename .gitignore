@@ -2,3 +2,4 @@ venv
 logs
 .env
 dags/__pycache__
+config/
