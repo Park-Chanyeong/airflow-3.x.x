@@ -16,7 +16,7 @@ with DAG(
     
     @task(task_id='get_daily_monitoring_rslt_task')
     def get_daily_monitoring_rslt_task():
-        postgres_hook = PostgresHook(postgres_conn_id='conn-db-postgres-airflow')
+        postgres_hook = PostgresHook(postgres_conn_id='conn_db_postgres_airflow')
         with closing(postgres_hook.get_conn()) as conn:
             with closing(conn.cursor()) as cursor:
                 with open('/opt/airflow/files/sqls/daily_dag_monitoring.sql', 'r') as sql_file:
